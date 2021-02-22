@@ -3,6 +3,8 @@
 import seaborn as sns # For plotting
 import matplotlib.pyplot as plt # For showing plots
 
+sns.set()
+
 # Load in the data set
 tips_data = sns.load_dataset("tips")
 
@@ -34,16 +36,19 @@ print("\n Print the summary statistics for quantitative variables:\n",tips_data.
 #########################################################################################
 
 # Plot a histogram of the total bill
-sns.distplot(tips_data["total_bill"], kde = False).set_title("Histogram of Total Bill")
+sns.displot(tips_data["total_bill"], kde = False)
+plt.title("Histogram of Total Bill")
 plt.show()
 
 # Plot a histogram of the Tips only
-sns.distplot(tips_data["tip"], kde = False).set_title("Histogram of Total Tip")
+sns.displot(tips_data["tip"], kde = False)
+plt.title("Histogram of Total Tip")
 plt.show()
 
 # Plot a histogram of both the total bill and the tips'
-sns.distplot(tips_data["total_bill"], kde = False)
-sns.distplot(tips_data["tip"], kde = False).set_title("Histogram of Both Tip Size and Total Bill")
+sns.histplot(tips_data["total_bill"],color='b', kde = True,alpha=0.5)
+sns.histplot(tips_data["tip"],color='r', kde = True,alpha=0.5)
+plt.title("Histogram of Both Tip Size and Total Bill")
 plt.show()
 
 #########################################################################################
