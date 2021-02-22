@@ -48,3 +48,9 @@ Matplotlib is a plotting library. In this section give a brief introduction to t
 Seaborn is complimentary to Matplotlib and it specifically targets statistical data visualization. But it goes even further than that: Seaborn extends Matplotlib and makes generating visualizations convenient.
 
 While Matplotlib is a robust solution for various problems, Seaborn utilizes more concise paramesters for ease-of-use.
+
+#Visualizing Data in Python
+Tables, Histograms, Boxplots, and Slicing for Statistics
+When working with a new dataset, one of the most useful things to do is to begin to visualize the data. By using tables, histograms, box plots, and other visual tools, we can get a better idea of what the data may be trying to tell us, and we can gain insights into the data that we may have not discovered otherwise.
+
+Today, we will be going over how to perform some basic visualisations in Python, and, most importantly, we will learn how to begin exploring data from a graphical perspective.
