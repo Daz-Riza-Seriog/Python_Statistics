@@ -30,7 +30,7 @@ print(df.head())
 
 # Make a Seaborn scatter plot with x = height and y = wingspan using sns.scatterplot(x, y)
 plt.figure(1) ## Using scatterplot that only makes a scatter plot
-sns.scatterplot(x=df["Height"],y=df["Wingspan"],)
+sns.scatterplot(x=df["Height"],y=df["Wingspan"])
 plt.title("Height vs Wingspan")
 plt.xlabel("Height")
 plt.ylabel("Wingspan")
