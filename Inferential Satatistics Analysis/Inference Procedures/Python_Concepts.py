@@ -67,3 +67,8 @@ df.rename(columns={'col1':'apples','col2':'oranges'})
 print("What Happend if i change the column Names?\n",df) # You must overwrite the Dataframe variable
 df = df.rename(columns={'col1':'apples','col2':'oranges'})
 print("Now its better:\n",df)
+
+#Here we do a Inverse of matrix
+df['Bananas'] = [6,7,15] # Add a new column
+df_inv = pd.DataFrame(np.linalg.inv(df.values),df.columns,df.index) #Create a new DF wit the inverse matrix
+print(df_inv)
